@@ -1,0 +1,28 @@
+$breakpoint-tablet: 768px;
+
+.youtube-app__navbar-mobile {
+    display: none;
+    background-color: red;
+    border-bottom: 1px solid lightgrey;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    .ant-input-wrapper {
+      .ant-input,
+      .ant-input-group-addon {
+        border-radius: 0;
+      }
+      .ant-input-search-button {
+        background-color: red;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .youtube-app__navbar-mobile {
+    display: block;
+  }
+}

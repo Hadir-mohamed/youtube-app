@@ -1,0 +1,43 @@
+$breakpoint-tablet: 768px;
+
+.youtube-app__navbar {
+  display: block;
+  overflow: hidden;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+   padding-top: 50px;
+  &__content {
+    padding: 0 8% 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+    align-items: center;
+    img {
+      width: 110px;
+    }
+    .ant-input-search {
+      display: block;
+      width: 78%;
+    }
+    .ant-input-group-addon {
+      border-radius: 0;
+      .ant-input-search-button {
+        color: black;
+        background-color: #f6f5f5;
+        box-shadow: none;
+      }
+    }
+    &__search-input {
+      width: 74%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .youtube-app__navbar {
+    display: none;
+  }
+}

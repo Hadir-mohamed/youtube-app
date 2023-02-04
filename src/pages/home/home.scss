@@ -1,0 +1,19 @@
+.youtube-app__videos {
+  background-color: rgb(250, 250, 250);
+  margin-top: 70px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .youtube-app__videos {
+    margin-top: 0px;
+    // &__wrapper {
+    // }
+  }
+  
+}
