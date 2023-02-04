@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Spin } from "antd";
+import "./loading.scss";
 
 const Spinner: React.FC = () => (
-  <div className="loader" style={{marginTop:'50%'}}>
+  <div className="loader">
     <Spin>
       <div className="content" />
     </Spin>

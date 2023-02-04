@@ -28,7 +28,7 @@ const Home: React.FC = () => {
   }, [isLoading,setIsLoading]);
 
   useEffect(() => {
-    setIsLoading(false);
+    videos && setIsLoading(false);
   }, [videos,setIsLoading]);
 
   useEffect(() => {

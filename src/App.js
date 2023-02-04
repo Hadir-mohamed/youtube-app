@@ -37,16 +37,12 @@ function App() {
     );
   }
 
-  if (isLoading && window.screen.width <= 768) {
-    return <Spinner />;
-  }
-
   return (
     <AppContext.Provider value={value}>
       <QueryClientProvider client={queryClient}>
         <div className="youtube-app">
           <>
-            {isLoading && <LoadingLine />}
+            {isLoading && window.innerWidth <= 768 ? <Spinner /> :  <LoadingLine />}
             <Navbar />
             <MobileNavbar />
             <BrowserRouter>

@@ -4,7 +4,7 @@ export const AppContext = createContext({
   searchTirm: "",
   setSearchTirm: (elm) => {},
   setIsLoading: (val) => {},
-  isLoading: false,
+  isLoading: true,
   setError: (err) => {},
   error: {},
 });
