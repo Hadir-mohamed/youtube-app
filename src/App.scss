@@ -1,0 +1,20 @@
+$breakpoint-tablet: 768px;
+
+.youtube-app {
+  padding: 100px;
+  padding-top: 0;
+  font-family: "Roboto","Arial",sans-serif;
+}
+
+.mobile-loader{
+  display: none;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .youtube-app {
+    padding: 0px !important;
+  }
+  .mobile-loader{
+    display: block;
+  }
+}
